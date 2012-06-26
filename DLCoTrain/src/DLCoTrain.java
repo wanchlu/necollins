@@ -1,4 +1,7 @@
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.Map;
 import java.util.HashMap;
@@ -13,6 +16,7 @@ import java.io.IOException;
 
 class Global {
 	public static final double pmin = 0.95;
+	public static final int n = 5;
 }
 class CountHash {
 	private Map<String,Integer> LCount= new HashMap<String,Integer>();	// = Count(key,L)
@@ -165,24 +169,48 @@ class Rule {
 	private String feature;
 	private Type type;
 	private Double strength;
+	private int frequency;
 	public Rule (String str) {
 		String[] tokens = str.split("\\s+");
 		type = Type.valueOf(tokens[0]);
 		feature = tokens[1];
 		strength = Double.parseDouble(tokens[2]);
+		frequency = 0;
+	}
+	public Rule (String f, Type t, Double s, int fr) {
+		feature = f;
+		type = t;
+		strength = s;
+		frequency = fr;
 	}
 	public String getFeature () { return feature; }
 	public Type getType () { return type; }
 	public Double getStrength () { return strength; } 
+	public int getFrequency () { return frequency; }
 	public void print () {
-		System.out.println(feature+" -> "+type+"\t"+strength);
+		System.out.println(feature+" -> "+type+"\t"+frequency+"\t"+strength);
 	}
 }
-
+class RuleStrengthComparator implements Comparator<Rule> {
+	public int compare(Rule r1, Rule r2) {
+		return (int) (r2.getStrength() - r1.getStrength());	// descending order
+	}
+}
+class RuleFrequencyComparator implements Comparator<Rule> {
+	public int compare(Rule r1, Rule r2) {
+		return (int) (r2.getFrequency() - r1.getFrequency());	// descending order
+	}
+}
 class DecisionList {
 	private List<Rule> rulelist;
 	public DecisionList () {
 		rulelist = new ArrayList<Rule> ();		
+	}
+	public DecisionList (List<Rule> rl) {
+		rulelist = new ArrayList<Rule> ();		
+		for (Rule r:rl){
+			rulelist.add(r);
+		}
 	}
 	public DecisionList (String filename) {
 		rulelist = new ArrayList<Rule> ();
@@ -218,14 +246,39 @@ class DecisionList {
 			rulelist.get(i).print();
 		}
 	}
-	// return number of new induced rules, add to the original rulelist
-	public int induceUsingLabeledSet (int n, CountHash countHash) {
-		int count = 0;
+	// return a DL of new induced rules, add to the original rulelist
+	public DecisionList induceUsingLabeledSet (int n, CountHash countHash) {
+		List<Rule> newRules = new ArrayList<Rule>();
 		Iterator Liter = countHash.getTypeCountIterator(Type.valueOf("L"));
 		Iterator Piter = countHash.getTypeCountIterator(Type.valueOf("P"));
 		Iterator Oiter = countHash.getTypeCountIterator(Type.valueOf("O"));
-		Iterator Titer = countHash.getTotalCountIterator();
-		return count;
+		newRules.addAll(candidateRules (Liter, countHash, Type.valueOf("L"), n));
+		newRules.addAll(candidateRules (Piter, countHash, Type.valueOf("P"), n));
+		newRules.addAll(candidateRules (Oiter, countHash, Type.valueOf("O"), n));
+		rulelist.addAll(newRules);
+		
+		return new DecisionList(newRules);
+	}
+	private List<Rule> candidateRules (Iterator iter, CountHash countHash, Type t, int n) {
+		List<Rule> allCandidates = new ArrayList<Rule> ();
+		List<Rule> firstnCandidates = new ArrayList<Rule> ();
+		while (iter.hasNext()) {
+			Map.Entry<String, Integer> entry= (Entry<String, Integer>) iter.next();
+			String f = entry.getKey();
+			Integer c = entry.getValue();
+			Integer Tc = countHash.getTotalCount(f);
+			double strength = c.doubleValue()/Tc.doubleValue();
+			if (strength > Global.pmin) {
+				Rule newrule = new Rule(f,t,strength,c);
+				allCandidates.add(newrule);
+			}
+		}
+		Collections.sort(allCandidates, new RuleFrequencyComparator());
+		//Collections.sort(allCandidates, Collections.reverseOrder());
+		for (int i = 0; i < allCandidates.size() && i < n; i++) {
+			firstnCandidates.add(allCandidates.get(i));
+		}
+		return firstnCandidates;
 	}
 }
 
@@ -249,7 +302,7 @@ public class DLCoTrain {
 		DecisionList contextualDL = new DecisionList();
 		CountHash countHash = new CountHash (trainSet);
 		//System.out.println(countHash.getTypeCount(Type.valueOf("P"), "X2_Mr.")+" "+countHash.getTotalCount( "X2_Mr."));
-		contextualDL.induceUsingLabeledSet(n, countHash);
+		contextualDL.induceUsingLabeledSet(n, countHash).print();
 	}
 
 }
