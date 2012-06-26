@@ -1,1 +1,0 @@
-prefix=10k,train=10k.train,test=all.test,positive_ystr=P,seed.rules=all.seed.rules

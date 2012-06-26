@@ -1,9 +1,0 @@
-Files are:
-
-all.train.ex is the training data
-
-all.text.ex is the test data
-
-all.text.y are the test data labels
-
-all.seed.rules is the set of seed rules used in Collins and Singer 1999
