@@ -212,6 +212,7 @@ class DecisionList {
 			rulelist.add(r);
 		}
 	}
+
 	public DecisionList (String filename) {
 		rulelist = new ArrayList<Rule> ();
 		BufferedReader seedFile = null;
@@ -246,6 +247,14 @@ class DecisionList {
 			rulelist.get(i).print();
 		}
 	}
+	public void combineDL (DecisionList dl1, DecisionList dl2) {
+		rulelist = new ArrayList<Rule> ();
+		rulelist.addAll(dl1.rulelist);
+		rulelist.addAll(dl2.rulelist);
+	}
+	public void appendDL (DecisionList dl) {
+		rulelist.addAll(dl.rulelist);
+	}
 	// return a DL of new induced rules, add to the original rulelist
 	public DecisionList induceUsingLabeledSet (int n, CountHash countHash) {
 		List<Rule> newRules = new ArrayList<Rule>();
@@ -255,7 +264,7 @@ class DecisionList {
 		newRules.addAll(candidateRules (Liter, countHash, Type.valueOf("L"), n));
 		newRules.addAll(candidateRules (Piter, countHash, Type.valueOf("P"), n));
 		newRules.addAll(candidateRules (Oiter, countHash, Type.valueOf("O"), n));
-		rulelist.addAll(newRules);
+	//	rulelist.addAll(newRules);
 		
 		return new DecisionList(newRules);
 	}
@@ -280,7 +289,28 @@ class DecisionList {
 		return firstnCandidates;
 	}
 }
-
+class SpellingDecisionList extends DecisionList {
+	private List<Rule> candidateRules (Iterator iter, CountHash countHash, Type t, int n) {
+		List<Rule> allCandidates = new ArrayList<Rule> ();
+		List<Rule> firstnCandidates = new ArrayList<Rule> ();
+		while (iter.hasNext()) {
+			Map.Entry<String, Integer> entry= (Entry<String, Integer>) iter.next();
+			String f = entry.getKey();
+			Integer c = entry.getValue();
+			Integer Tc = countHash.getTotalCount(f);
+			double strength = c.doubleValue()/Tc.doubleValue();
+			if (strength > Global.pmin) {
+				Rule newrule = new Rule(f,t,strength,c);
+				allCandidates.add(newrule);
+			}
+		}
+		Collections.sort(allCandidates, new RuleFrequencyComparator());
+		for (int i = 0; i < allCandidates.size() && i < n; i++) {
+			firstnCandidates.add(allCandidates.get(i));
+		}
+		return firstnCandidates;
+	}
+}
 public class DLCoTrain {
 
 	/**
