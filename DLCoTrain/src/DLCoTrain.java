@@ -274,7 +274,6 @@ class DecisionList {
 			}
 		}
 		Collections.sort(allCandidates, new RuleFrequencyComparator());
-		//Collections.sort(allCandidates, Collections.reverseOrder());
 		for (int i = 0; i < allCandidates.size() && i < n; i++) {
 			firstnCandidates.add(allCandidates.get(i));
 		}
