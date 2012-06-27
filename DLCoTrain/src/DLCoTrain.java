@@ -24,6 +24,9 @@ class CountHash {
 	private Map<String,Integer> PCount= new HashMap<String,Integer>(); // = Count(key,P)
 	private Map<String,Integer> OCount= new HashMap<String,Integer>();	// = Count(key,O)
 	private Map<String,Integer> TCount= new HashMap<String,Integer>(); // = Count(key)
+	public CountHash (){
+		
+	}
 	public CountHash (TrainSet trainSet) {
 		 for (TrainExample e: trainSet.getLabeledExamples()) {
 			 for (String f: e.getFeatures()) {
@@ -55,6 +58,14 @@ class CountHash {
 		case P: PCount.remove(f); break;
 		case O: OCount.remove(f); break;
 		default: TCount.remove(f); break;
+		}
+	}
+	public void deleteMultipleEntry (DecisionList dl) {
+		for (int i = 0; i < dl.size(); i++) {
+			Rule r = dl.getRule(i);
+			Type t = r.getType();
+			String f = r.getFeature();
+			this.deleteEntry(t, f);
 		}
 	}
 	public Integer getTypeCount (Type t, String f) {
@@ -269,10 +280,9 @@ class DecisionList {
 		newDL.appendDL(candidateRules (countHash, Type.valueOf("L"), n));
 		newDL.appendDL(candidateRules (countHash, Type.valueOf("P"), n));
 		newDL.appendDL(candidateRules (countHash, Type.valueOf("O"), n));
-		
 		return newDL;
 	}
-	private DecisionList candidateRules (CountHash countHash, Type t, int n) {
+	protected DecisionList candidateRules (CountHash countHash, Type t, int n) {
 		Iterator iter = countHash.getTypeCountIterator(t);
 		List<Rule> allCandidates = new ArrayList<Rule> ();
 		List<Rule> firstnCandidates = new ArrayList<Rule> ();
@@ -294,6 +304,7 @@ class DecisionList {
 		}
 		return new DecisionList(firstnCandidates);
 	}
+	
 }
 class SpellingDecisionList extends DecisionList {
 	public SpellingDecisionList (String filename) {
@@ -320,7 +331,17 @@ class SpellingDecisionList extends DecisionList {
         }	
 	}
 	// only induce contextual rules
-	private DecisionList candidateRules (CountHash countHash, Type t, int n) {
+	public SpellingDecisionList() {
+		rulelist = new ArrayList<Rule> ();
+	}
+	public ContextualDecisionList induceUsingLabeledSet (int n, CountHash countHash) {
+		ContextualDecisionList newDL = new ContextualDecisionList();
+		newDL.appendDL(candidateRules (countHash, Type.valueOf("L"), n));
+		newDL.appendDL(candidateRules (countHash, Type.valueOf("P"), n));
+		newDL.appendDL(candidateRules (countHash, Type.valueOf("O"), n));
+		return newDL;
+	}
+	protected DecisionList candidateRules (CountHash countHash, Type t, int n) {
 		Iterator iter = countHash.getTypeCountIterator(t);
 		List<Rule> allCandidates = new ArrayList<Rule> ();
 		List<Rule> firstnCandidates = new ArrayList<Rule> ();
@@ -350,7 +371,14 @@ class ContextualDecisionList extends DecisionList {
 		rulelist = new ArrayList<Rule> ();
 	}
 	// only induce spelling rules
-	private DecisionList candidateRules (CountHash countHash, Type t, int n) {
+	public SpellingDecisionList induceUsingLabeledSet (int n, CountHash countHash) {
+		SpellingDecisionList newDL = new SpellingDecisionList();
+		newDL.appendDL(candidateRules (countHash, Type.valueOf("L"), n));
+		newDL.appendDL(candidateRules (countHash, Type.valueOf("P"), n));
+		newDL.appendDL(candidateRules (countHash, Type.valueOf("O"), n));
+		return newDL;
+	}
+	protected DecisionList candidateRules (CountHash countHash, Type t, int n) {
 		Iterator iter = countHash.getTypeCountIterator(t);
 		List<Rule> allCandidates = new ArrayList<Rule> ();
 		List<Rule> firstnCandidates = new ArrayList<Rule> ();
@@ -376,27 +404,60 @@ class ContextualDecisionList extends DecisionList {
 		return new DecisionList(firstnCandidates);
 	}
 }
+
 public class DLCoTrain {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// 1. set n= = 5
 		int n = 5;
+		int it = 0;
 		// 2. Initialization
 		SpellingDecisionList spellingDL = new SpellingDecisionList(
 				"/Users/wanchen/github/necollins/DLCoTrain/necollinssinger/all.seed.rules");
-		//spellingDL.print();
+		ContextualDecisionList contextualDL = new ContextualDecisionList();
 		TrainSet trainSet = new TrainSet (
 				"/Users/wanchen/github/necollins/DLCoTrain/necollinssinger/all.train.ex");
-		// 3. Label the training set using the current set of spelling rules
-		System.out.println("\nTotally labeled "+trainSet.LabelUsingDL(spellingDL)+" examples");
-		// 4. Use labeled examples to induce contextual DL
-		ContextualDecisionList contextualDL = new ContextualDecisionList();
-		CountHash countHash = new CountHash (trainSet);
-		//System.out.println(countHash.getTypeCount(Type.valueOf("P"), "X2_Mr.")+" "+countHash.getTotalCount( "X2_Mr."));
-		contextualDL.induceUsingLabeledSet(n, countHash).print();
+		CountHash countHash = new CountHash();
+		do {
+			System.out.println("\nIteration "+it+", n = "+n);
+			// 3. Label the training set using the current set of spelling rules
+			System.out.println("\nLabeled "+trainSet.LabelUsingDL(spellingDL)+" examples using spelling rules");
+			
+			// 4. Use labeled examples to induce contextual DL
+			countHash = new CountHash (trainSet);
+			//countHash.deleteMultipleEntry(spellingDL);
+			contextualDL = spellingDL.induceUsingLabeledSet(n, countHash);
+			System.out.println("Induced "+contextualDL.size()+" contextual rules");
+			//contextualDL.print();
+			
+			// 5. Label the training set using the current set of contextual rules
+			System.out.println("\nLabeled "+trainSet.LabelUsingDL(contextualDL)+" examples using contextual rules");
+			
+			// 6. On the new labeled set, induce spelling rules
+			SpellingDecisionList newSpellingDL = new SpellingDecisionList();
+			countHash = new CountHash (trainSet);
+			newSpellingDL = contextualDL.induceUsingLabeledSet(n, countHash);
+			System.out.println("Induced "+newSpellingDL.size()+" spelling rules");
+			//newSpellingDL.print();
+			
+			// set the spelling rules to be the seed set plus the newSpellingDL
+			spellingDL.appendDL(newSpellingDL);
+			
+			// 7. If n < 2500 set n = n+ 5 and return to step 3.
+			n = n+ 5;
+			it ++;
+		} while (n < 2500);
+		
+		// Otherwise label the training data with the combined spelling/contextual decision list, then
+		// induce a final decision list from the labeled examples where all rules are added to the DL
+		DecisionList combinedDL = new DecisionList();
+		combinedDL.combineDL(spellingDL, contextualDL);
+		System.out.println("\nLabeled "+trainSet.LabelUsingDL(combinedDL)+" examples using combined rules");
+		countHash = new CountHash (trainSet);
+		DecisionList finalDL = new DecisionList();
+		finalDL = combinedDL.induceUsingLabeledSet(n, countHash);
+		System.out.println("Final DL:");
+		finalDL.print();
 	}
 
 }
