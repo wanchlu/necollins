@@ -13,10 +13,11 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 class Global {
 	public static final double pmin = 0.95;
-	public static final int n = 5;
 }
 class CountHash {
 	private Map<String,Integer> LCount= new HashMap<String,Integer>();	// = Count(key,L)
@@ -47,6 +48,14 @@ class CountHash {
 				 }
 			 }
 		 }
+	}
+	public void deleteEntry (Type t, String f){
+		switch (t) {
+		case L: LCount.remove(f); break;
+		case P: PCount.remove(f); break;
+		case O: OCount.remove(f); break;
+		default: TCount.remove(f); break;
+		}
 	}
 	public Integer getTypeCount (Type t, String f) {
 		switch (t) {
@@ -202,7 +211,7 @@ class RuleFrequencyComparator implements Comparator<Rule> {
 	}
 }
 class DecisionList {
-	private List<Rule> rulelist;
+	protected List<Rule> rulelist;
 	public DecisionList () {
 		rulelist = new ArrayList<Rule> ();		
 	}
@@ -212,7 +221,6 @@ class DecisionList {
 			rulelist.add(r);
 		}
 	}
-
 	public DecisionList (String filename) {
 		rulelist = new ArrayList<Rule> ();
 		BufferedReader seedFile = null;
@@ -257,18 +265,15 @@ class DecisionList {
 	}
 	// return a DL of new induced rules, add to the original rulelist
 	public DecisionList induceUsingLabeledSet (int n, CountHash countHash) {
-		List<Rule> newRules = new ArrayList<Rule>();
-		Iterator Liter = countHash.getTypeCountIterator(Type.valueOf("L"));
-		Iterator Piter = countHash.getTypeCountIterator(Type.valueOf("P"));
-		Iterator Oiter = countHash.getTypeCountIterator(Type.valueOf("O"));
-		newRules.addAll(candidateRules (Liter, countHash, Type.valueOf("L"), n));
-		newRules.addAll(candidateRules (Piter, countHash, Type.valueOf("P"), n));
-		newRules.addAll(candidateRules (Oiter, countHash, Type.valueOf("O"), n));
-	//	rulelist.addAll(newRules);
+		DecisionList newDL = new DecisionList();
+		newDL.appendDL(candidateRules (countHash, Type.valueOf("L"), n));
+		newDL.appendDL(candidateRules (countHash, Type.valueOf("P"), n));
+		newDL.appendDL(candidateRules (countHash, Type.valueOf("O"), n));
 		
-		return new DecisionList(newRules);
+		return newDL;
 	}
-	private List<Rule> candidateRules (Iterator iter, CountHash countHash, Type t, int n) {
+	private DecisionList candidateRules (CountHash countHash, Type t, int n) {
+		Iterator iter = countHash.getTypeCountIterator(t);
 		List<Rule> allCandidates = new ArrayList<Rule> ();
 		List<Rule> firstnCandidates = new ArrayList<Rule> ();
 		while (iter.hasNext()) {
@@ -285,30 +290,90 @@ class DecisionList {
 		Collections.sort(allCandidates, new RuleFrequencyComparator());
 		for (int i = 0; i < allCandidates.size() && i < n; i++) {
 			firstnCandidates.add(allCandidates.get(i));
+			countHash.deleteEntry(t, allCandidates.get(i).getFeature());
 		}
-		return firstnCandidates;
+		return new DecisionList(firstnCandidates);
 	}
 }
 class SpellingDecisionList extends DecisionList {
-	private List<Rule> candidateRules (Iterator iter, CountHash countHash, Type t, int n) {
+	public SpellingDecisionList (String filename) {
+		rulelist = new ArrayList<Rule> ();
+		BufferedReader seedFile = null;
+		try {
+			seedFile = new BufferedReader(new FileReader (filename));
+		} catch (FileNotFoundException fnfe) {
+            System.out.println("Problem opening file");
+            System.exit(1);
+        }
+		try {
+			while (true) {
+				String seedLine = seedFile.readLine();
+				if (seedLine == null)
+					break;
+				rulelist.add(new Rule(seedLine));
+			}
+			seedFile.close();
+			
+		} catch (IOException ioe) {
+            System.out.println("Problem reading file");
+            System.exit(1);
+        }	
+	}
+	// only induce contextual rules
+	private DecisionList candidateRules (CountHash countHash, Type t, int n) {
+		Iterator iter = countHash.getTypeCountIterator(t);
 		List<Rule> allCandidates = new ArrayList<Rule> ();
 		List<Rule> firstnCandidates = new ArrayList<Rule> ();
 		while (iter.hasNext()) {
 			Map.Entry<String, Integer> entry= (Entry<String, Integer>) iter.next();
 			String f = entry.getKey();
-			Integer c = entry.getValue();
-			Integer Tc = countHash.getTotalCount(f);
-			double strength = c.doubleValue()/Tc.doubleValue();
-			if (strength > Global.pmin) {
-				Rule newrule = new Rule(f,t,strength,c);
-				allCandidates.add(newrule);
+			if (f.matches("^X11_.*") || f.matches("^X01_.*")) {
+				Integer c = entry.getValue();
+				Integer Tc = countHash.getTotalCount(f);
+				double strength = c.doubleValue()/Tc.doubleValue();
+				if (strength > Global.pmin) {
+					Rule newrule = new Rule(f,t,strength,c);
+					allCandidates.add(newrule);
+				}
 			}
 		}
 		Collections.sort(allCandidates, new RuleFrequencyComparator());
 		for (int i = 0; i < allCandidates.size() && i < n; i++) {
 			firstnCandidates.add(allCandidates.get(i));
+			countHash.deleteEntry(t, allCandidates.get(i).getFeature());
 		}
-		return firstnCandidates;
+		return new DecisionList(firstnCandidates);
+	}
+}
+class ContextualDecisionList extends DecisionList {
+	public ContextualDecisionList() {
+		rulelist = new ArrayList<Rule> ();
+	}
+	// only induce spelling rules
+	private DecisionList candidateRules (CountHash countHash, Type t, int n) {
+		Iterator iter = countHash.getTypeCountIterator(t);
+		List<Rule> allCandidates = new ArrayList<Rule> ();
+		List<Rule> firstnCandidates = new ArrayList<Rule> ();
+		while (iter.hasNext()) {
+			Map.Entry<String, Integer> entry= (Entry<String, Integer>) iter.next();
+			String f = entry.getKey();
+			if (f.matches("^X0_.*") || f.matches("^X2_.*") || f.matches("^X5_.*") 
+					|| f.matches("^X6_.*") || f.matches("^X7_.*")) {
+				Integer c = entry.getValue();
+				Integer Tc = countHash.getTotalCount(f);
+				double strength = c.doubleValue()/Tc.doubleValue();
+				if (strength > Global.pmin) {
+					Rule newrule = new Rule(f,t,strength,c);
+					allCandidates.add(newrule);
+				}
+			}
+		}
+		Collections.sort(allCandidates, new RuleFrequencyComparator());
+		for (int i = 0; i < allCandidates.size() && i < n; i++) {
+			firstnCandidates.add(allCandidates.get(i));
+			countHash.deleteEntry(t, allCandidates.get(i).getFeature());
+		}
+		return new DecisionList(firstnCandidates);
 	}
 }
 public class DLCoTrain {
@@ -320,7 +385,7 @@ public class DLCoTrain {
 		// 1. set n= = 5
 		int n = 5;
 		// 2. Initialization
-		DecisionList spellingDL = new DecisionList(
+		SpellingDecisionList spellingDL = new SpellingDecisionList(
 				"/Users/wanchen/github/necollins/DLCoTrain/necollinssinger/all.seed.rules");
 		//spellingDL.print();
 		TrainSet trainSet = new TrainSet (
@@ -328,7 +393,7 @@ public class DLCoTrain {
 		// 3. Label the training set using the current set of spelling rules
 		System.out.println("\nTotally labeled "+trainSet.LabelUsingDL(spellingDL)+" examples");
 		// 4. Use labeled examples to induce contextual DL
-		DecisionList contextualDL = new DecisionList();
+		ContextualDecisionList contextualDL = new ContextualDecisionList();
 		CountHash countHash = new CountHash (trainSet);
 		//System.out.println(countHash.getTypeCount(Type.valueOf("P"), "X2_Mr.")+" "+countHash.getTotalCount( "X2_Mr."));
 		contextualDL.induceUsingLabeledSet(n, countHash).print();
