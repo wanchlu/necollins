@@ -413,10 +413,10 @@ public class DLCoTrain {
 		int it = 0;
 		// 2. Initialization
 		SpellingDecisionList spellingDL = new SpellingDecisionList(
-				"/Users/wanchen/github/necollins/DLCoTrain/necollinssinger/all.seed.rules");
+				"./DLCoTrain/necollinssinger/all.seed.rules");
 		ContextualDecisionList contextualDL = new ContextualDecisionList();
 		TrainSet trainSet = new TrainSet (
-				"/Users/wanchen/github/necollins/DLCoTrain/necollinssinger/all.train.ex");
+				"./DLCoTrain/necollinssinger/all.train.ex");
 		CountHash countHash = new CountHash();
 		do {
 			System.out.println("\nIteration "+it+", n = "+n);
