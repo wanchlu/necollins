@@ -162,7 +162,8 @@ class TestSet {
 				String line = testLabelFile.readLine();
 				if (line == null)
 					break;
-				testexamples.get(exampleid).setRealType(line);
+				if (!line.equals("?"))
+					testexamples.get(exampleid).setRealType(line);
 				exampleid ++;
 			}
 			testLabelFile.close();			
@@ -638,7 +639,8 @@ public class DLCoTrain {
 		// Label test set
 		TestSet testSet = new TestSet ("./DLCoTrain/necollinssinger/all.test.ex");
 		testSet.ReadTestSetLabels("./DLCoTrain/necollinssinger/all.test.y");
-		testSet.LabelUsingDL(combinedDL);
+		DecisionList finalDL = new DecisionList("./DLCoTrain/finalDL.txt");
+		testSet.LabelUsingDL(finalDL);
 		System.out.println("\nTest result:");
 
 		testSet.print();
