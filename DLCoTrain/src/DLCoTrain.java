@@ -92,8 +92,56 @@ class CountHash {
 	}
 }
 
-class TestExample {
-	
+class TestSet {
+	private List<TestExample> testexamples;
+	public TestSet (String filename) {
+		testexamples = new ArrayList<TestExample> ();
+		BufferedReader testFile = null;
+		try {
+			testFile = new BufferedReader(new FileReader (filename));
+		} catch (FileNotFoundException fnfe) {
+            System.out.println("Problem opening file");
+            System.exit(1);
+        }
+		try {
+			int exampleid = 0;
+			while (true) {
+				String exampleLine = testFile.readLine();
+				if (exampleLine == null)
+					break;
+				testexamples.add(new TestExample(exampleid, exampleLine));
+				exampleid ++;
+			}
+			testFile.close();			
+		} catch (IOException ioe) {
+            System.out.println("Problem reading file");
+            System.exit(1);
+        }	
+	}
+	public void ReadTestSetLabels (String filename) {
+		BufferedReader testLabelFile = null;
+		try {
+			testLabelFile = new BufferedReader(new FileReader (filename));
+		} catch (FileNotFoundException fnfe) {
+            System.out.println("Problem opening file");
+            System.exit(1);
+        }
+		try {
+			int exampleid = 0;
+			while (true) {
+				String line = testLabelFile.readLine();
+				if (line == null)
+					break;
+				testexamples.get(exampleid).setRealType(line);
+				exampleid ++;
+			}
+			testLabelFile.close();			
+		} catch (IOException ioe) {
+            System.out.println("Problem reading file");
+            System.exit(1);
+        }	
+		
+	}
 }
 class TrainSet {
 	private List<TrainExample> trainexamples;
@@ -131,12 +179,16 @@ class TrainSet {
 	public TrainExample getTrainExample (int ii) {
 		return trainexamples.get(ii);
 	}
-	// return how many examples got labeled
+	// return how many examples got newly labeled
 	public int LabelUsingDL (DecisionList dl) {
 		int count = 0;
-		labeledexamples = new ArrayList<TrainExample> ();		
+	//	labeledexamples = new ArrayList<TrainExample> ();		
 		for (int i = 0; i < trainexamples.size(); i++) {	// for every example
-			Boolean labeled = false;
+			Boolean labeled = trainexamples.get(i).isLabeled();
+			if (labeled) {
+		//		System.out.println("Example "+i+" is already labeled.");
+				continue;
+			}
 			for (int j = 0; j < dl.size(); j++) {	// for every rule
 				Rule rule = dl.getRule(j);
 				for (String f:this.getTrainExample(i).getFeatures()){	// for every feature of the example
@@ -183,8 +235,42 @@ class TrainExample {
 	public void print () {
 		System.out.println("TrainExample "+id+": "+type+" "+featureString);
 	}
+	public boolean isLabeled () {
+		return type!=null;
+	}
 }
 
+class TestExample {
+	private Type realType = null;
+	private Type predType = null;
+	private List<String> features;
+	private String featureString;
+	private int id;
+	public TestExample (int ii, String str) {
+		id = ii;
+		features = new ArrayList<String> ();
+		String[] tokens = str.split("\\s+");	
+		for (String t:tokens) {
+			features.add(t);
+		}
+		featureString = str;
+	}
+	public int getId () { return id; }
+	public List<String> getFeatures () { return features; }
+	public String getFeature (int ii) {
+		return features.get(ii);
+	}
+	public void setRealType (String s) { realType = Type.valueOf(s); }
+	public void setRealType (Type t) { realType = t; }
+	public Type getRealType () { return realType; }
+	public void setPrecType (String s) { predType = Type.valueOf(s); }
+	public void setPrecType (Type t) { predType = t; }
+	public Type getPrecType () { return predType; }
+	public void print () {
+		System.out.println("TestExample "+id+": "+realType+" "+featureString);
+	}
+	
+}
 class Rule {
 	private String feature;
 	private Type type;
@@ -412,37 +498,41 @@ public class DLCoTrain {
 		int n = 5;
 		int it = 0;
 		// 2. Initialization
-		SpellingDecisionList spellingDL = new SpellingDecisionList(
-				"./DLCoTrain/necollinssinger/all.seed.rules");
+		SpellingDecisionList spellingDL = new SpellingDecisionList();
 		ContextualDecisionList contextualDL = new ContextualDecisionList();
-		TrainSet trainSet = new TrainSet (
+		ContextualDecisionList newContextualDL = new ContextualDecisionList();
+		SpellingDecisionList newSpellingDL = new SpellingDecisionList(
+				"./DLCoTrain/necollinssinger/all.seed.rules");		
+		TrainSet spellingLabeledTrainSet = new TrainSet (
+				"./DLCoTrain/necollinssinger/all.train.ex");
+		TrainSet contextualLabeledTrainSet = new TrainSet (
 				"./DLCoTrain/necollinssinger/all.train.ex");
 		CountHash countHash = new CountHash();
 		do {
 			System.out.println("\nIteration "+it+", n = "+n);
 			// 3. Label the training set using the current set of spelling rules
-			System.out.println("\nLabeled "+trainSet.LabelUsingDL(spellingDL)+" examples using spelling rules");
+			System.out.println("\nLabeled "+spellingLabeledTrainSet.LabelUsingDL(newSpellingDL)+" examples using spelling rules");
 			
 			// 4. Use labeled examples to induce contextual DL
-			countHash = new CountHash (trainSet);
+			countHash = new CountHash (spellingLabeledTrainSet);
 			//countHash.deleteMultipleEntry(spellingDL);
-			contextualDL = spellingDL.induceUsingLabeledSet(n, countHash);
-			System.out.println("Induced "+contextualDL.size()+" contextual rules");
+			newContextualDL = spellingDL.induceUsingLabeledSet(n, countHash);
+			System.out.println("Induced "+newContextualDL.size()+" contextual rules");
 			//contextualDL.print();
 			
 			// 5. Label the training set using the current set of contextual rules
-			System.out.println("\nLabeled "+trainSet.LabelUsingDL(contextualDL)+" examples using contextual rules");
+			System.out.println("\nLabeled "+contextualLabeledTrainSet.LabelUsingDL(contextualDL)+" examples using contextual rules");
 			
 			// 6. On the new labeled set, induce spelling rules
-			SpellingDecisionList newSpellingDL = new SpellingDecisionList();
-			countHash = new CountHash (trainSet);
+			newSpellingDL = new SpellingDecisionList();
+			countHash = new CountHash (contextualLabeledTrainSet);
 			newSpellingDL = contextualDL.induceUsingLabeledSet(n, countHash);
 			System.out.println("Induced "+newSpellingDL.size()+" spelling rules");
 			//newSpellingDL.print();
 			
 			// set the spelling rules to be the seed set plus the newSpellingDL
 			spellingDL.appendDL(newSpellingDL);
-			
+			contextualDL.appendDL(newContextualDL);
 			// 7. If n < 2500 set n = n+ 5 and return to step 3.
 			n = n+ 5;
 			it ++;
@@ -452,8 +542,8 @@ public class DLCoTrain {
 		// induce a final decision list from the labeled examples where all rules are added to the DL
 		DecisionList combinedDL = new DecisionList();
 		combinedDL.combineDL(spellingDL, contextualDL);
-		System.out.println("\nLabeled "+trainSet.LabelUsingDL(combinedDL)+" examples using combined rules");
-		countHash = new CountHash (trainSet);
+		System.out.println("\nLabeled "+spellingLabeledTrainSet.LabelUsingDL(contextualDL)+" examples using combined rules");
+		countHash = new CountHash (spellingLabeledTrainSet);
 		DecisionList finalDL = new DecisionList();
 		finalDL = combinedDL.induceUsingLabeledSet(n, countHash);
 		System.out.println("Final DL:");
