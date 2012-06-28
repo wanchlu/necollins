@@ -50,6 +50,7 @@
     </target>
     <target name="DLCoTrain">
         <java classname="DLCoTrain" failonerror="true" fork="yes">
+            <jvmarg line="-Xmx2000m"/>
             <classpath refid="DLCoTrain.classpath"/>
         </java>
     </target>
