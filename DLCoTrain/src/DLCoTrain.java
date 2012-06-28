@@ -414,6 +414,9 @@ class DecisionList {
             System.exit(1);
         }	
 	}
+	public void sortByStrength () {
+		Collections.sort(rulelist, new RuleStrengthComparator());
+	}
 	public Rule getRule (int ii) {
 		return rulelist.get(ii);
 	}
@@ -596,6 +599,7 @@ public class DLCoTrain {
 			// 4. Use labeled examples to induce contextual DL
 			countSpellingHash.add(newlyLabeledSpellingExamples);
 			newContextualDL = newSpellingDL.induceUsingLabeledSet(n, countSpellingHash);
+			newContextualDL.sortByStrength();
 			System.out.println("Induced "+newContextualDL.size()+" contextual rules");
 			//contextualDL.print();
 			
@@ -606,6 +610,7 @@ public class DLCoTrain {
 			// 6. On the new labeled set, induce spelling rules
 			countContextualHash.add(newlyLabeledContextualExamples);
 			newSpellingDL = newContextualDL.induceUsingLabeledSet(n, countContextualHash);
+			newSpellingDL.sortByStrength();
 			System.out.println("Induced "+newSpellingDL.size()+" spelling rules");
 			//newSpellingDL.print();
 			
@@ -623,8 +628,8 @@ public class DLCoTrain {
 		combinedDL.combineDL(spellingDL, contextualDL);
 		System.out.println("\nLabeled "+spellingLabeledTrainSet.LabelUsingDL(contextualDL).size()+" examples using combined rules");
 		CountHash countHash = new CountHash (spellingLabeledTrainSet);
-		//DecisionList finalDL = new DecisionList();
 		combinedDL.appendDL(combinedDL.induceUsingLabeledSet(n, countHash));
+		combinedDL.sortByStrength();
 //		System.out.println("Final DL:");
 //		combinedDL.print();
 		try {
