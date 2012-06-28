@@ -565,10 +565,10 @@ public class DLCoTrain {
 		combinedDL.combineDL(spellingDL, contextualDL);
 		System.out.println("\nLabeled "+spellingLabeledTrainSet.LabelUsingDL(contextualDL).size()+" examples using combined rules");
 		CountHash countHash = new CountHash (spellingLabeledTrainSet);
-		DecisionList finalDL = new DecisionList();
-		finalDL = combinedDL.induceUsingLabeledSet(n, countHash);
+		//DecisionList finalDL = new DecisionList();
+		combinedDL.appendDL(combinedDL.induceUsingLabeledSet(n, countHash));
 		System.out.println("Final DL:");
-		finalDL.print();
+		combinedDL.print();
 	}
 
 }
