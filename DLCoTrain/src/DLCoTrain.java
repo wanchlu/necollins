@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 
 class Global {
 	public static final double pmin = 0.95;
+	public static final int testSize = 877;
 }
 class CountHash {
 	private Map<String,Integer> LCount= new HashMap<String,Integer>();	// = Count(key,L)
@@ -141,6 +142,12 @@ class TestSet {
             System.exit(1);
         }	
 	}
+	public List<TestExample> getTestExamples () {
+		return testexamples;
+	}
+	public TestExample getTestExample (int ii) {
+		return testexamples.get(ii);
+	}
 	public void ReadTestSetLabels (String filename) {
 		BufferedReader testLabelFile = null;
 		try {
@@ -164,6 +171,39 @@ class TestSet {
             System.exit(1);
         }	
 		
+	}
+	public void LabelUsingDL (DecisionList dl) {
+		for (int i = 0; i< testexamples.size(); i++) {
+			Boolean labeled = false;
+			for (int j = 0; j < dl.size(); j++) {
+				Rule rule = dl.getRule(j);
+				for (String f:this.getTestExample(i).getFeatures()) {
+					if (f.equals(rule.getFeature())) {
+						getTestExample(i).setPredType(rule.getType());
+						labeled = true;
+					}
+					if (labeled) break;
+				}
+				if (labeled) break;
+			}
+			if (!labeled)
+				getTestExample(i).setPredType("L");	// default L
+				
+		}
+	}
+	public void print () {
+		for (TestExample e: testexamples) {
+			e.print();
+		}
+	}
+	public double Accuracy () {
+		int correctCnt = 0;
+		for (TestExample e: testexamples) {
+			if (e.predIsCorrect()) {
+				correctCnt ++;
+			}
+		}
+		return (double) correctCnt/ (double) Global.testSize;
 	}
 }
 class TrainSet {
@@ -283,11 +323,14 @@ class TestExample {
 	public void setRealType (String s) { realType = Type.valueOf(s); }
 	public void setRealType (Type t) { realType = t; }
 	public Type getRealType () { return realType; }
-	public void setPrecType (String s) { predType = Type.valueOf(s); }
-	public void setPrecType (Type t) { predType = t; }
-	public Type getPrecType () { return predType; }
+	public void setPredType (String s) { predType = Type.valueOf(s); }
+	public void setPredType (Type t) { predType = t; }
+	public Type getPredType () { return predType; }
+	public boolean predIsCorrect () {
+		return (realType != null && predType != null && realType == predType);
+	}
 	public void print () {
-		System.out.println("TestExample "+id+": "+realType+" "+featureString);
+		System.out.println(realType+" "+predType+" "+featureString);
 	}
 	
 }
@@ -569,6 +612,16 @@ public class DLCoTrain {
 		combinedDL.appendDL(combinedDL.induceUsingLabeledSet(n, countHash));
 		System.out.println("Final DL:");
 		combinedDL.print();
+		
+		// Label test set
+		TestSet testSet = new TestSet ("./DLCoTrain/necollinssinger/all.test.ex");
+		testSet.ReadTestSetLabels("./DLCoTrain/necollinssinger/all.test.y");
+		testSet.LabelUsingDL(combinedDL);
+		System.out.println("\nTest result:");
+		testSet.print();
+		System.out.println("\nAccuracy: "+testSet.Accuracy());
+		
+		
 	}
 
 }
