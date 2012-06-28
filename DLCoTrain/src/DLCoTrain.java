@@ -188,7 +188,7 @@ class TestSet {
 				if (labeled) break;
 			}
 			if (!labeled)
-				getTestExample(i).setPredType("L");	// default L
+				getTestExample(i).setPredType("O");	// default O
 				
 		}
 	}
@@ -575,6 +575,7 @@ class ContextualDecisionList extends DecisionList {
 public class DLCoTrain {
 
 	public static void main(String[] args) {
+	
 		// 1. set n= = 5
 		int n = 5;
 		int it = 0;
@@ -640,17 +641,9 @@ public class DLCoTrain {
 			out.close();
 		} catch (IOException e){
 			e.printStackTrace();
-		}		
-		// Label test set
-		TestSet testSet = new TestSet ("./DLCoTrain/necollinssinger/all.test.ex");
-		testSet.ReadTestSetLabels("./DLCoTrain/necollinssinger/all.test.y");
-		DecisionList finalDL = new DecisionList("./DLCoTrain/finalDL.txt");
-		testSet.LabelUsingDL(finalDL);
-		System.out.println("\nTest result:");
-
-		testSet.print();
-		System.out.println("\nAccuracy: "+testSet.Accuracy());
+		}	
 		
 	}
 
 }
+
