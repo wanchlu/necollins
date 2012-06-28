@@ -314,7 +314,7 @@ class Rule {
 	public Double getStrength () { return strength; } 
 	public int getFrequency () { return frequency; }
 	public void print () {
-		System.out.println(feature+" -> "+type+"\t"+frequency+"\t"+strength);
+		System.out.println(type+" "+feature+" "+frequency+"\t"+strength);
 	}
 }
 class RuleStrengthComparator implements Comparator<Rule> {
@@ -536,7 +536,6 @@ public class DLCoTrain {
 			System.out.println("\nLabeled "+newlyLabeledSpellingExamples.size()+" examples using spelling rules");
 			
 			// 4. Use labeled examples to induce contextual DL
-		System.out.println("countHash size is "+countSpellingHash.size()+ " " +countContextualHash.size());	
 			countSpellingHash.add(newlyLabeledSpellingExamples);
 			newContextualDL = newSpellingDL.induceUsingLabeledSet(n, countSpellingHash);
 			System.out.println("Induced "+newContextualDL.size()+" contextual rules");
