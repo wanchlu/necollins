@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-//import java.io.File;
+import java.io.*;
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -191,12 +191,16 @@ class TestSet {
 				
 		}
 	}
+	public void print (PrintWriter pw) {
+		for (TestExample e: testexamples) {
+			e.print(pw);
+		}
+	}
 	public void print () {
 		for (TestExample e: testexamples) {
 			e.print();
 		}
-	}
-	public double Accuracy () {
+	}	public double Accuracy () {
 		int correctCnt = 0;
 		for (TestExample e: testexamples) {
 			if (e.predIsCorrect()) {
@@ -332,7 +336,9 @@ class TestExample {
 	public void print () {
 		System.out.println(realType+" "+predType+" "+featureString);
 	}
-	
+	public void print (PrintWriter pw) {
+		pw.println(realType+" "+predType+" "+featureString);
+	}	
 }
 class Rule {
 	private String feature;
@@ -358,6 +364,9 @@ class Rule {
 	public int getFrequency () { return frequency; }
 	public void print () {
 		System.out.println(type+" "+feature+" "+frequency+"\t"+strength);
+	}
+	public void print (PrintWriter pw) {
+		pw.println(type+" "+feature+" "+frequency+"\t"+strength);
 	}
 }
 class RuleStrengthComparator implements Comparator<Rule> {
@@ -413,6 +422,11 @@ class DecisionList {
 	public void print () {
 		for (int i = 0; i < rulelist.size(); i++) {
 			rulelist.get(i).print();
+		}
+	}
+	public void print (PrintWriter pw) {
+		for (int i = 0; i < rulelist.size(); i++) {
+			rulelist.get(i).print(pw);
 		}
 	}
 	public void combineDL (DecisionList dl1, DecisionList dl2) {
@@ -610,17 +624,25 @@ public class DLCoTrain {
 		CountHash countHash = new CountHash (spellingLabeledTrainSet);
 		//DecisionList finalDL = new DecisionList();
 		combinedDL.appendDL(combinedDL.induceUsingLabeledSet(n, countHash));
-		System.out.println("Final DL:");
-		combinedDL.print();
-		
+//		System.out.println("Final DL:");
+//		combinedDL.print();
+		try {
+			FileWriter outFile = new FileWriter("./DLCoTrain/finalDL.txt");
+			PrintWriter out = new PrintWriter(outFile);			
+			combinedDL.print(out);
+
+			out.close();
+		} catch (IOException e){
+			e.printStackTrace();
+		}		
 		// Label test set
 		TestSet testSet = new TestSet ("./DLCoTrain/necollinssinger/all.test.ex");
 		testSet.ReadTestSetLabels("./DLCoTrain/necollinssinger/all.test.y");
 		testSet.LabelUsingDL(combinedDL);
 		System.out.println("\nTest result:");
+
 		testSet.print();
 		System.out.println("\nAccuracy: "+testSet.Accuracy());
-		
 		
 	}
 
