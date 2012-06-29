@@ -393,6 +393,7 @@ class DecisionList {
 		try {
 			seedFile = new BufferedReader(new FileReader (filename));
 		} catch (FileNotFoundException fnfe) {
+			fnfe.printStackTrace();
             System.out.println("Problem opening file");
             System.exit(1);
         }
@@ -406,6 +407,7 @@ class DecisionList {
 			seedFile.close();
 			
 		} catch (IOException ioe) {
+			ioe.printStackTrace();
             System.out.println("Problem reading file");
             System.exit(1);
         }	
@@ -638,15 +640,7 @@ public class DLCoTrain {
 		} catch (IOException e){
 			e.printStackTrace();
 		}	
-		// Label test set
-		TestSet testSet = new TestSet ("./DLCoTrain/necollinssinger/all.test.ex");
-		testSet.ReadTestSetLabels("./DLCoTrain/necollinssinger/all.test.y");
-		DecisionList finalDL = new DecisionList("./DLCoTrain/finalDL.txt");
-		testSet.LabelUsingDL(finalDL);
-		System.out.println("\nTest result:");
 
-		testSet.print();
-		System.out.println("\nAccuracy: "+testSet.Accuracy());
 		
 	}
 

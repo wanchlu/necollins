@@ -54,4 +54,9 @@
             <classpath refid="DLCoTrain.classpath"/>
         </java>
     </target>
+    <target name="Test">
+        <java classname="Test" failonerror="true" fork="yes">
+            <classpath refid="DLCoTrain.classpath"/>
+        </java>
+    </target>
 </project>
