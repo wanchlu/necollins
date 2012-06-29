@@ -9,10 +9,6 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 import java.io.*;
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -642,6 +638,15 @@ public class DLCoTrain {
 		} catch (IOException e){
 			e.printStackTrace();
 		}	
+		// Label test set
+		TestSet testSet = new TestSet ("./DLCoTrain/necollinssinger/all.test.ex");
+		testSet.ReadTestSetLabels("./DLCoTrain/necollinssinger/all.test.y");
+		DecisionList finalDL = new DecisionList("./DLCoTrain/finalDL.txt");
+		testSet.LabelUsingDL(finalDL);
+		System.out.println("\nTest result:");
+
+		testSet.print();
+		System.out.println("\nAccuracy: "+testSet.Accuracy());
 		
 	}
 
