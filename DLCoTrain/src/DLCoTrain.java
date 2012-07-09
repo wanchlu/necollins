@@ -1,3 +1,4 @@
+// arg[0]: train file; arg[1]: seed rules file
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -120,7 +121,7 @@ class TestSet {
 		try {
 			testFile = new BufferedReader(new FileReader (filename));
 		} catch (FileNotFoundException fnfe) {
-            System.out.println("Problem opening file");
+	 fnfe.printStackTrace();
             System.exit(1);
         }
 		try {
@@ -134,7 +135,7 @@ class TestSet {
 			}
 			testFile.close();			
 		} catch (IOException ioe) {
-            System.out.println("Problem reading file");
+	 ioe.printStackTrace();
             System.exit(1);
         }	
 	}
@@ -478,7 +479,7 @@ class SpellingDecisionList extends DecisionList {
 		try {
 			seedFile = new BufferedReader(new FileReader (filename));
 		} catch (FileNotFoundException fnfe) {
-            System.out.println("Problem opening file");
+		 fnfe.printStackTrace();
             System.exit(1);
         }
 		try {
@@ -491,7 +492,7 @@ class SpellingDecisionList extends DecisionList {
 			seedFile.close();
 			
 		} catch (IOException ioe) {
-            System.out.println("Problem reading file");
+	 ioe.printStackTrace();
             System.exit(1);
         }	
 	}
@@ -581,12 +582,12 @@ public class DLCoTrain {
 		SpellingDecisionList spellingDL = new SpellingDecisionList();
 		ContextualDecisionList contextualDL = new ContextualDecisionList();
 		ContextualDecisionList newContextualDL = new ContextualDecisionList();
-		SpellingDecisionList newSpellingDL = new SpellingDecisionList(
-				"./DLCoTrain/necollinssinger/all.seed.rules");		
-		TrainSet spellingLabeledTrainSet = new TrainSet (
-				"./DLCoTrain/necollinssinger/all.train.ex");
-		TrainSet contextualLabeledTrainSet = new TrainSet (
-				"./DLCoTrain/necollinssinger/all.train.ex");
+		SpellingDecisionList newSpellingDL = new SpellingDecisionList(args[1]);
+			//	"./DLCoTrain/necollinssinger/all.seed.rules");		
+		TrainSet spellingLabeledTrainSet = new TrainSet (args[0]);
+			//	"./DLCoTrain/necollinssinger/all.train.ex");
+		TrainSet contextualLabeledTrainSet = new TrainSet (args[0]);
+			//	"./DLCoTrain/necollinssinger/all.train.ex");
 		CountHash countSpellingHash = new CountHash(spellingLabeledTrainSet);
 		CountHash countContextualHash = new CountHash(contextualLabeledTrainSet);
 		do {
@@ -629,8 +630,6 @@ public class DLCoTrain {
 		CountHash countHash = new CountHash (spellingLabeledTrainSet);
 		combinedDL.appendDL(combinedDL.induceUsingLabeledSet(n, countHash));
 		combinedDL.sortByStrength();
-//		System.out.println("Final DL:");
-//		combinedDL.print();
 		try {
 			FileWriter outFile = new FileWriter("./DLCoTrain/finalDL.txt");
 			PrintWriter out = new PrintWriter(outFile);			

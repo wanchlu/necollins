@@ -1,0 +1,7 @@
+prefix=all,train=all.train,test=all.test,seed.rules=all.seed.rules
+prefix=allp,train=all.train,test=all.test,seed.rules=all.seed.rules,positive_ystr=P
+prefix=allpcheat,train=all.train,test=all.test,seed.rules=all.final.rules,train.y=all.final.train.y,positive_ystr=P
+prefix=a,train=a.train,test=a.train,seed.rules=all
+prefix=b,train=b.train,test=b.train,seed.rules=all
+prefix=c,train=c.train,test=c.train,seed.rules=all
+prefix=z,train=z.train,test=z.train,seed.rules=z

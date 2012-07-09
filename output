@@ -1,0 +1,3994 @@
+
+Iteration 0, n = 5
+
+Labeled 8603 examples using spelling rules
+Induced 15 contextual rules
+
+Labeled 12796 examples using contextual rules
+Induced 15 spelling rules
+
+Iteration 1, n = 10
+
+Labeled 14083 examples using spelling rules
+Induced 30 contextual rules
+
+Labeled 13118 examples using contextual rules
+Induced 30 spelling rules
+
+Iteration 2, n = 15
+
+Labeled 6200 examples using spelling rules
+Induced 45 contextual rules
+
+Labeled 5503 examples using contextual rules
+Induced 45 spelling rules
+
+Iteration 3, n = 20
+
+Labeled 5749 examples using spelling rules
+Induced 60 contextual rules
+
+Labeled 3433 examples using contextual rules
+Induced 60 spelling rules
+
+Iteration 4, n = 25
+
+Labeled 3978 examples using spelling rules
+Induced 75 contextual rules
+
+Labeled 2113 examples using contextual rules
+Induced 75 spelling rules
+
+Iteration 5, n = 30
+
+Labeled 2907 examples using spelling rules
+Induced 90 contextual rules
+
+Labeled 2465 examples using contextual rules
+Induced 90 spelling rules
+
+Iteration 6, n = 35
+
+Labeled 3392 examples using spelling rules
+Induced 105 contextual rules
+
+Labeled 2541 examples using contextual rules
+Induced 105 spelling rules
+
+Iteration 7, n = 40
+
+Labeled 2293 examples using spelling rules
+Induced 120 contextual rules
+
+Labeled 1210 examples using contextual rules
+Induced 120 spelling rules
+
+Iteration 8, n = 45
+
+Labeled 2141 examples using spelling rules
+Induced 135 contextual rules
+
+Labeled 1058 examples using contextual rules
+Induced 135 spelling rules
+
+Iteration 9, n = 50
+
+Labeled 1432 examples using spelling rules
+Induced 150 contextual rules
+
+Labeled 823 examples using contextual rules
+Induced 150 spelling rules
+
+Iteration 10, n = 55
+
+Labeled 1270 examples using spelling rules
+Induced 165 contextual rules
+
+Labeled 834 examples using contextual rules
+Induced 165 spelling rules
+
+Iteration 11, n = 60
+
+Labeled 1160 examples using spelling rules
+Induced 180 contextual rules
+
+Labeled 840 examples using contextual rules
+Induced 180 spelling rules
+
+Iteration 12, n = 65
+
+Labeled 735 examples using spelling rules
+Induced 195 contextual rules
+
+Labeled 667 examples using contextual rules
+Induced 195 spelling rules
+
+Iteration 13, n = 70
+
+Labeled 548 examples using spelling rules
+Induced 210 contextual rules
+
+Labeled 632 examples using contextual rules
+Induced 210 spelling rules
+
+Iteration 14, n = 75
+
+Labeled 843 examples using spelling rules
+Induced 225 contextual rules
+
+Labeled 730 examples using contextual rules
+Induced 225 spelling rules
+
+Iteration 15, n = 80
+
+Labeled 687 examples using spelling rules
+Induced 240 contextual rules
+
+Labeled 696 examples using contextual rules
+Induced 240 spelling rules
+
+Iteration 16, n = 85
+
+Labeled 665 examples using spelling rules
+Induced 255 contextual rules
+
+Labeled 403 examples using contextual rules
+Induced 255 spelling rules
+
+Iteration 17, n = 90
+
+Labeled 574 examples using spelling rules
+Induced 270 contextual rules
+
+Labeled 435 examples using contextual rules
+Induced 270 spelling rules
+
+Iteration 18, n = 95
+
+Labeled 615 examples using spelling rules
+Induced 285 contextual rules
+
+Labeled 496 examples using contextual rules
+Induced 285 spelling rules
+
+Iteration 19, n = 100
+
+Labeled 580 examples using spelling rules
+Induced 300 contextual rules
+
+Labeled 483 examples using contextual rules
+Induced 300 spelling rules
+
+Iteration 20, n = 105
+
+Labeled 531 examples using spelling rules
+Induced 315 contextual rules
+
+Labeled 464 examples using contextual rules
+Induced 315 spelling rules
+
+Iteration 21, n = 110
+
+Labeled 410 examples using spelling rules
+Induced 330 contextual rules
+
+Labeled 508 examples using contextual rules
+Induced 330 spelling rules
+
+Iteration 22, n = 115
+
+Labeled 426 examples using spelling rules
+Induced 345 contextual rules
+
+Labeled 547 examples using contextual rules
+Induced 345 spelling rules
+
+Iteration 23, n = 120
+
+Labeled 468 examples using spelling rules
+Induced 360 contextual rules
+
+Labeled 566 examples using contextual rules
+Induced 360 spelling rules
+
+Iteration 24, n = 125
+
+Labeled 489 examples using spelling rules
+Induced 375 contextual rules
+
+Labeled 549 examples using contextual rules
+Induced 322 spelling rules
+
+Iteration 25, n = 130
+
+Labeled 375 examples using spelling rules
+Induced 306 contextual rules
+
+Labeled 455 examples using contextual rules
+Induced 286 spelling rules
+
+Iteration 26, n = 135
+
+Labeled 341 examples using spelling rules
+Induced 273 contextual rules
+
+Labeled 377 examples using contextual rules
+Induced 293 spelling rules
+
+Iteration 27, n = 140
+
+Labeled 426 examples using spelling rules
+Induced 294 contextual rules
+
+Labeled 478 examples using contextual rules
+Induced 353 spelling rules
+
+Iteration 28, n = 145
+
+Labeled 324 examples using spelling rules
+Induced 296 contextual rules
+
+Labeled 441 examples using contextual rules
+Induced 321 spelling rules
+
+Iteration 29, n = 150
+
+Labeled 320 examples using spelling rules
+Induced 304 contextual rules
+
+Labeled 424 examples using contextual rules
+Induced 340 spelling rules
+
+Iteration 30, n = 155
+
+Labeled 290 examples using spelling rules
+Induced 256 contextual rules
+
+Labeled 358 examples using contextual rules
+Induced 342 spelling rules
+
+Iteration 31, n = 160
+
+Labeled 278 examples using spelling rules
+Induced 86 contextual rules
+
+Labeled 117 examples using contextual rules
+Induced 333 spelling rules
+
+Iteration 32, n = 165
+
+Labeled 292 examples using spelling rules
+Induced 22 contextual rules
+
+Labeled 52 examples using contextual rules
+Induced 331 spelling rules
+
+Iteration 33, n = 170
+
+Labeled 195 examples using spelling rules
+Induced 16 contextual rules
+
+Labeled 21 examples using contextual rules
+Induced 340 spelling rules
+
+Iteration 34, n = 175
+
+Labeled 159 examples using spelling rules
+Induced 7 contextual rules
+
+Labeled 11 examples using contextual rules
+Induced 350 spelling rules
+
+Iteration 35, n = 180
+
+Labeled 194 examples using spelling rules
+Induced 17 contextual rules
+
+Labeled 24 examples using contextual rules
+Induced 360 spelling rules
+
+Iteration 36, n = 185
+
+Labeled 194 examples using spelling rules
+Induced 15 contextual rules
+
+Labeled 23 examples using contextual rules
+Induced 370 spelling rules
+
+Iteration 37, n = 190
+
+Labeled 169 examples using spelling rules
+Induced 17 contextual rules
+
+Labeled 27 examples using contextual rules
+Induced 380 spelling rules
+
+Iteration 38, n = 195
+
+Labeled 199 examples using spelling rules
+Induced 27 contextual rules
+
+Labeled 32 examples using contextual rules
+Induced 390 spelling rules
+
+Iteration 39, n = 200
+
+Labeled 205 examples using spelling rules
+Induced 25 contextual rules
+
+Labeled 50 examples using contextual rules
+Induced 400 spelling rules
+
+Iteration 40, n = 205
+
+Labeled 251 examples using spelling rules
+Induced 14 contextual rules
+
+Labeled 19 examples using contextual rules
+Induced 410 spelling rules
+
+Iteration 41, n = 210
+
+Labeled 214 examples using spelling rules
+Induced 21 contextual rules
+
+Labeled 27 examples using contextual rules
+Induced 420 spelling rules
+
+Iteration 42, n = 215
+
+Labeled 237 examples using spelling rules
+Induced 23 contextual rules
+
+Labeled 33 examples using contextual rules
+Induced 430 spelling rules
+
+Iteration 43, n = 220
+
+Labeled 237 examples using spelling rules
+Induced 27 contextual rules
+
+Labeled 96 examples using contextual rules
+Induced 440 spelling rules
+
+Iteration 44, n = 225
+
+Labeled 172 examples using spelling rules
+Induced 12 contextual rules
+
+Labeled 17 examples using contextual rules
+Induced 450 spelling rules
+
+Iteration 45, n = 230
+
+Labeled 149 examples using spelling rules
+Induced 9 contextual rules
+
+Labeled 12 examples using contextual rules
+Induced 460 spelling rules
+
+Iteration 46, n = 235
+
+Labeled 140 examples using spelling rules
+Induced 11 contextual rules
+
+Labeled 19 examples using contextual rules
+Induced 470 spelling rules
+
+Iteration 47, n = 240
+
+Labeled 156 examples using spelling rules
+Induced 14 contextual rules
+
+Labeled 30 examples using contextual rules
+Induced 480 spelling rules
+
+Iteration 48, n = 245
+
+Labeled 157 examples using spelling rules
+Induced 16 contextual rules
+
+Labeled 28 examples using contextual rules
+Induced 490 spelling rules
+
+Iteration 49, n = 250
+
+Labeled 155 examples using spelling rules
+Induced 15 contextual rules
+
+Labeled 31 examples using contextual rules
+Induced 500 spelling rules
+
+Iteration 50, n = 255
+
+Labeled 167 examples using spelling rules
+Induced 11 contextual rules
+
+Labeled 15 examples using contextual rules
+Induced 510 spelling rules
+
+Iteration 51, n = 260
+
+Labeled 167 examples using spelling rules
+Induced 20 contextual rules
+
+Labeled 29 examples using contextual rules
+Induced 520 spelling rules
+
+Iteration 52, n = 265
+
+Labeled 164 examples using spelling rules
+Induced 11 contextual rules
+
+Labeled 13 examples using contextual rules
+Induced 530 spelling rules
+
+Iteration 53, n = 270
+
+Labeled 146 examples using spelling rules
+Induced 16 contextual rules
+
+Labeled 20 examples using contextual rules
+Induced 540 spelling rules
+
+Iteration 54, n = 275
+
+Labeled 167 examples using spelling rules
+Induced 17 contextual rules
+
+Labeled 20 examples using contextual rules
+Induced 550 spelling rules
+
+Iteration 55, n = 280
+
+Labeled 182 examples using spelling rules
+Induced 20 contextual rules
+
+Labeled 29 examples using contextual rules
+Induced 560 spelling rules
+
+Iteration 56, n = 285
+
+Labeled 140 examples using spelling rules
+Induced 15 contextual rules
+
+Labeled 26 examples using contextual rules
+Induced 570 spelling rules
+
+Iteration 57, n = 290
+
+Labeled 171 examples using spelling rules
+Induced 9 contextual rules
+
+Labeled 12 examples using contextual rules
+Induced 580 spelling rules
+
+Iteration 58, n = 295
+
+Labeled 129 examples using spelling rules
+Induced 13 contextual rules
+
+Labeled 16 examples using contextual rules
+Induced 590 spelling rules
+
+Iteration 59, n = 300
+
+Labeled 176 examples using spelling rules
+Induced 19 contextual rules
+
+Labeled 24 examples using contextual rules
+Induced 600 spelling rules
+
+Iteration 60, n = 305
+
+Labeled 169 examples using spelling rules
+Induced 16 contextual rules
+
+Labeled 23 examples using contextual rules
+Induced 610 spelling rules
+
+Iteration 61, n = 310
+
+Labeled 174 examples using spelling rules
+Induced 15 contextual rules
+
+Labeled 19 examples using contextual rules
+Induced 620 spelling rules
+
+Iteration 62, n = 315
+
+Labeled 176 examples using spelling rules
+Induced 19 contextual rules
+
+Labeled 28 examples using contextual rules
+Induced 630 spelling rules
+
+Iteration 63, n = 320
+
+Labeled 153 examples using spelling rules
+Induced 10 contextual rules
+
+Labeled 18 examples using contextual rules
+Induced 640 spelling rules
+
+Iteration 64, n = 325
+
+Labeled 194 examples using spelling rules
+Induced 19 contextual rules
+
+Labeled 30 examples using contextual rules
+Induced 650 spelling rules
+
+Iteration 65, n = 330
+
+Labeled 181 examples using spelling rules
+Induced 15 contextual rules
+
+Labeled 25 examples using contextual rules
+Induced 660 spelling rules
+
+Iteration 66, n = 335
+
+Labeled 153 examples using spelling rules
+Induced 21 contextual rules
+
+Labeled 29 examples using contextual rules
+Induced 670 spelling rules
+
+Iteration 67, n = 340
+
+Labeled 166 examples using spelling rules
+Induced 13 contextual rules
+
+Labeled 18 examples using contextual rules
+Induced 680 spelling rules
+
+Iteration 68, n = 345
+
+Labeled 167 examples using spelling rules
+Induced 20 contextual rules
+
+Labeled 25 examples using contextual rules
+Induced 690 spelling rules
+
+Iteration 69, n = 350
+
+Labeled 156 examples using spelling rules
+Induced 13 contextual rules
+
+Labeled 28 examples using contextual rules
+Induced 700 spelling rules
+
+Iteration 70, n = 355
+
+Labeled 146 examples using spelling rules
+Induced 13 contextual rules
+
+Labeled 19 examples using contextual rules
+Induced 710 spelling rules
+
+Iteration 71, n = 360
+
+Labeled 144 examples using spelling rules
+Induced 19 contextual rules
+
+Labeled 32 examples using contextual rules
+Induced 720 spelling rules
+
+Iteration 72, n = 365
+
+Labeled 156 examples using spelling rules
+Induced 11 contextual rules
+
+Labeled 16 examples using contextual rules
+Induced 730 spelling rules
+
+Iteration 73, n = 370
+
+Labeled 165 examples using spelling rules
+Induced 12 contextual rules
+
+Labeled 16 examples using contextual rules
+Induced 740 spelling rules
+
+Iteration 74, n = 375
+
+Labeled 175 examples using spelling rules
+Induced 13 contextual rules
+
+Labeled 16 examples using contextual rules
+Induced 750 spelling rules
+
+Iteration 75, n = 380
+
+Labeled 132 examples using spelling rules
+Induced 7 contextual rules
+
+Labeled 9 examples using contextual rules
+Induced 760 spelling rules
+
+Iteration 76, n = 385
+
+Labeled 165 examples using spelling rules
+Induced 18 contextual rules
+
+Labeled 27 examples using contextual rules
+Induced 429 spelling rules
+
+Iteration 77, n = 390
+
+Labeled 63 examples using spelling rules
+Induced 8 contextual rules
+
+Labeled 13 examples using contextual rules
+Induced 390 spelling rules
+
+Iteration 78, n = 395
+
+Labeled 43 examples using spelling rules
+Induced 3 contextual rules
+
+Labeled 3 examples using contextual rules
+Induced 395 spelling rules
+
+Iteration 79, n = 400
+
+Labeled 41 examples using spelling rules
+Induced 1 contextual rules
+
+Labeled 2 examples using contextual rules
+Induced 400 spelling rules
+
+Iteration 80, n = 405
+
+Labeled 46 examples using spelling rules
+Induced 7 contextual rules
+
+Labeled 11 examples using contextual rules
+Induced 405 spelling rules
+
+Iteration 81, n = 410
+
+Labeled 57 examples using spelling rules
+Induced 6 contextual rules
+
+Labeled 9 examples using contextual rules
+Induced 410 spelling rules
+
+Iteration 82, n = 415
+
+Labeled 49 examples using spelling rules
+Induced 5 contextual rules
+
+Labeled 9 examples using contextual rules
+Induced 415 spelling rules
+
+Iteration 83, n = 420
+
+Labeled 43 examples using spelling rules
+Induced 3 contextual rules
+
+Labeled 4 examples using contextual rules
+Induced 420 spelling rules
+
+Iteration 84, n = 425
+
+Labeled 37 examples using spelling rules
+Induced 2 contextual rules
+
+Labeled 2 examples using contextual rules
+Induced 425 spelling rules
+
+Iteration 85, n = 430
+
+Labeled 47 examples using spelling rules
+Induced 4 contextual rules
+
+Labeled 5 examples using contextual rules
+Induced 430 spelling rules
+
+Iteration 86, n = 435
+
+Labeled 41 examples using spelling rules
+Induced 4 contextual rules
+
+Labeled 26 examples using contextual rules
+Induced 435 spelling rules
+
+Iteration 87, n = 440
+
+Labeled 36 examples using spelling rules
+Induced 3 contextual rules
+
+Labeled 4 examples using contextual rules
+Induced 440 spelling rules
+
+Iteration 88, n = 445
+
+Labeled 42 examples using spelling rules
+Induced 4 contextual rules
+
+Labeled 4 examples using contextual rules
+Induced 445 spelling rules
+
+Iteration 89, n = 450
+
+Labeled 40 examples using spelling rules
+Induced 2 contextual rules
+
+Labeled 3 examples using contextual rules
+Induced 450 spelling rules
+
+Iteration 90, n = 455
+
+Labeled 31 examples using spelling rules
+Induced 4 contextual rules
+
+Labeled 31 examples using contextual rules
+Induced 455 spelling rules
+
+Iteration 91, n = 460
+
+Labeled 36 examples using spelling rules
+Induced 3 contextual rules
+
+Labeled 3 examples using contextual rules
+Induced 460 spelling rules
+
+Iteration 92, n = 465
+
+Labeled 37 examples using spelling rules
+Induced 4 contextual rules
+
+Labeled 5 examples using contextual rules
+Induced 465 spelling rules
+
+Iteration 93, n = 470
+
+Labeled 26 examples using spelling rules
+Induced 5 contextual rules
+
+Labeled 7 examples using contextual rules
+Induced 470 spelling rules
+
+Iteration 94, n = 475
+
+Labeled 27 examples using spelling rules
+Induced 3 contextual rules
+
+Labeled 3 examples using contextual rules
+Induced 475 spelling rules
+
+Iteration 95, n = 480
+
+Labeled 22 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 480 spelling rules
+
+Iteration 96, n = 485
+
+Labeled 56 examples using spelling rules
+Induced 3 contextual rules
+
+Labeled 4 examples using contextual rules
+Induced 485 spelling rules
+
+Iteration 97, n = 490
+
+Labeled 32 examples using spelling rules
+Induced 6 contextual rules
+
+Labeled 10 examples using contextual rules
+Induced 490 spelling rules
+
+Iteration 98, n = 495
+
+Labeled 21 examples using spelling rules
+Induced 2 contextual rules
+
+Labeled 2 examples using contextual rules
+Induced 495 spelling rules
+
+Iteration 99, n = 500
+
+Labeled 45 examples using spelling rules
+Induced 7 contextual rules
+
+Labeled 10 examples using contextual rules
+Induced 344 spelling rules
+
+Iteration 100, n = 505
+
+Labeled 30 examples using spelling rules
+Induced 7 contextual rules
+
+Labeled 11 examples using contextual rules
+Induced 13 spelling rules
+
+Iteration 101, n = 510
+
+Labeled 7 examples using spelling rules
+Induced 3 contextual rules
+
+Labeled 3 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 102, n = 515
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 103, n = 520
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 104, n = 525
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 105, n = 530
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 106, n = 535
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 107, n = 540
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 108, n = 545
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 109, n = 550
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 110, n = 555
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 111, n = 560
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 112, n = 565
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 113, n = 570
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 114, n = 575
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 115, n = 580
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 116, n = 585
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 117, n = 590
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 118, n = 595
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 119, n = 600
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 120, n = 605
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 121, n = 610
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 122, n = 615
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 123, n = 620
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 124, n = 625
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 125, n = 630
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 126, n = 635
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 127, n = 640
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 128, n = 645
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 129, n = 650
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 130, n = 655
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 131, n = 660
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 132, n = 665
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 133, n = 670
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 134, n = 675
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 135, n = 680
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 136, n = 685
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 137, n = 690
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 138, n = 695
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 139, n = 700
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 140, n = 705
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 141, n = 710
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 142, n = 715
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 143, n = 720
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 144, n = 725
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 145, n = 730
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 146, n = 735
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 147, n = 740
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 148, n = 745
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 149, n = 750
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 150, n = 755
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 151, n = 760
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 152, n = 765
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 153, n = 770
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 154, n = 775
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 155, n = 780
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 156, n = 785
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 157, n = 790
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 158, n = 795
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 159, n = 800
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 160, n = 805
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 161, n = 810
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 162, n = 815
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 163, n = 820
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 164, n = 825
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 165, n = 830
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 166, n = 835
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 167, n = 840
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 168, n = 845
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 169, n = 850
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 170, n = 855
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 171, n = 860
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 172, n = 865
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 173, n = 870
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 174, n = 875
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 175, n = 880
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 176, n = 885
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 177, n = 890
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 178, n = 895
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 179, n = 900
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 180, n = 905
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 181, n = 910
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 182, n = 915
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 183, n = 920
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 184, n = 925
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 185, n = 930
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 186, n = 935
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 187, n = 940
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 188, n = 945
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 189, n = 950
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 190, n = 955
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 191, n = 960
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 192, n = 965
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 193, n = 970
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 194, n = 975
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 195, n = 980
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 196, n = 985
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 197, n = 990
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 198, n = 995
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 199, n = 1000
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 200, n = 1005
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 201, n = 1010
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 202, n = 1015
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 203, n = 1020
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 204, n = 1025
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 205, n = 1030
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 206, n = 1035
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 207, n = 1040
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 208, n = 1045
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 209, n = 1050
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 210, n = 1055
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 211, n = 1060
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 212, n = 1065
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 213, n = 1070
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 214, n = 1075
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 215, n = 1080
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 216, n = 1085
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 217, n = 1090
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 218, n = 1095
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 219, n = 1100
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 220, n = 1105
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 221, n = 1110
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 222, n = 1115
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 223, n = 1120
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 224, n = 1125
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 225, n = 1130
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 226, n = 1135
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 227, n = 1140
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 228, n = 1145
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 229, n = 1150
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 230, n = 1155
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 231, n = 1160
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 232, n = 1165
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 233, n = 1170
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 234, n = 1175
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 235, n = 1180
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 236, n = 1185
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 237, n = 1190
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 238, n = 1195
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 239, n = 1200
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 240, n = 1205
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 241, n = 1210
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 242, n = 1215
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 243, n = 1220
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 244, n = 1225
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 245, n = 1230
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 246, n = 1235
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 247, n = 1240
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 248, n = 1245
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 249, n = 1250
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 250, n = 1255
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 251, n = 1260
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 252, n = 1265
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 253, n = 1270
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 254, n = 1275
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 255, n = 1280
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 256, n = 1285
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 257, n = 1290
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 258, n = 1295
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 259, n = 1300
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 260, n = 1305
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 261, n = 1310
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 262, n = 1315
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 263, n = 1320
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 264, n = 1325
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 265, n = 1330
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 266, n = 1335
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 267, n = 1340
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 268, n = 1345
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 269, n = 1350
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 270, n = 1355
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 271, n = 1360
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 272, n = 1365
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 273, n = 1370
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 274, n = 1375
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 275, n = 1380
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 276, n = 1385
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 277, n = 1390
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 278, n = 1395
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 279, n = 1400
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 280, n = 1405
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 281, n = 1410
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 282, n = 1415
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 283, n = 1420
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 284, n = 1425
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 285, n = 1430
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 286, n = 1435
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 287, n = 1440
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 288, n = 1445
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 289, n = 1450
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 290, n = 1455
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 291, n = 1460
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 292, n = 1465
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 293, n = 1470
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 294, n = 1475
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 295, n = 1480
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 296, n = 1485
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 297, n = 1490
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 298, n = 1495
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 299, n = 1500
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 300, n = 1505
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 301, n = 1510
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 302, n = 1515
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 303, n = 1520
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 304, n = 1525
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 305, n = 1530
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 306, n = 1535
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 307, n = 1540
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 308, n = 1545
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 309, n = 1550
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 310, n = 1555
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 311, n = 1560
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 312, n = 1565
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 313, n = 1570
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 314, n = 1575
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 315, n = 1580
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 316, n = 1585
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 317, n = 1590
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 318, n = 1595
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 319, n = 1600
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 320, n = 1605
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 321, n = 1610
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 322, n = 1615
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 323, n = 1620
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 324, n = 1625
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 325, n = 1630
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 326, n = 1635
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 327, n = 1640
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 328, n = 1645
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 329, n = 1650
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 330, n = 1655
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 331, n = 1660
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 332, n = 1665
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 333, n = 1670
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 334, n = 1675
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 335, n = 1680
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 336, n = 1685
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 337, n = 1690
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 338, n = 1695
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 339, n = 1700
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 340, n = 1705
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 341, n = 1710
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 342, n = 1715
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 343, n = 1720
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 344, n = 1725
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 345, n = 1730
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 346, n = 1735
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 347, n = 1740
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 348, n = 1745
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 349, n = 1750
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 350, n = 1755
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 351, n = 1760
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 352, n = 1765
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 353, n = 1770
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 354, n = 1775
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 355, n = 1780
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 356, n = 1785
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 357, n = 1790
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 358, n = 1795
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 359, n = 1800
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 360, n = 1805
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 361, n = 1810
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 362, n = 1815
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 363, n = 1820
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 364, n = 1825
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 365, n = 1830
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 366, n = 1835
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 367, n = 1840
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 368, n = 1845
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 369, n = 1850
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 370, n = 1855
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 371, n = 1860
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 372, n = 1865
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 373, n = 1870
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 374, n = 1875
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 375, n = 1880
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 376, n = 1885
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 377, n = 1890
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 378, n = 1895
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 379, n = 1900
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 380, n = 1905
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 381, n = 1910
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 382, n = 1915
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 383, n = 1920
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 384, n = 1925
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 385, n = 1930
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 386, n = 1935
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 387, n = 1940
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 388, n = 1945
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 389, n = 1950
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 390, n = 1955
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 391, n = 1960
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 392, n = 1965
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 393, n = 1970
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 394, n = 1975
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 395, n = 1980
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 396, n = 1985
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 397, n = 1990
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 398, n = 1995
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 399, n = 2000
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 400, n = 2005
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 401, n = 2010
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 402, n = 2015
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 403, n = 2020
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 404, n = 2025
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 405, n = 2030
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 406, n = 2035
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 407, n = 2040
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 408, n = 2045
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 409, n = 2050
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 410, n = 2055
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 411, n = 2060
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 412, n = 2065
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 413, n = 2070
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 414, n = 2075
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 415, n = 2080
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 416, n = 2085
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 417, n = 2090
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 418, n = 2095
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 419, n = 2100
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 420, n = 2105
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 421, n = 2110
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 422, n = 2115
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 423, n = 2120
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 424, n = 2125
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 425, n = 2130
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 426, n = 2135
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 427, n = 2140
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 428, n = 2145
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 429, n = 2150
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 430, n = 2155
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 431, n = 2160
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 432, n = 2165
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 433, n = 2170
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 434, n = 2175
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 435, n = 2180
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 436, n = 2185
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 437, n = 2190
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 438, n = 2195
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 439, n = 2200
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 440, n = 2205
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 441, n = 2210
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 442, n = 2215
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 443, n = 2220
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 444, n = 2225
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 445, n = 2230
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 446, n = 2235
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 447, n = 2240
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 448, n = 2245
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 449, n = 2250
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 450, n = 2255
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 451, n = 2260
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 452, n = 2265
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 453, n = 2270
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 454, n = 2275
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 455, n = 2280
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 456, n = 2285
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 457, n = 2290
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 458, n = 2295
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 459, n = 2300
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 460, n = 2305
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 461, n = 2310
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 462, n = 2315
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 463, n = 2320
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 464, n = 2325
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 465, n = 2330
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 466, n = 2335
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 467, n = 2340
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 468, n = 2345
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 469, n = 2350
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 470, n = 2355
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 471, n = 2360
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 472, n = 2365
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 473, n = 2370
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 474, n = 2375
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 475, n = 2380
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 476, n = 2385
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 477, n = 2390
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 478, n = 2395
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 479, n = 2400
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 480, n = 2405
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 481, n = 2410
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 482, n = 2415
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 483, n = 2420
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 484, n = 2425
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 485, n = 2430
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 486, n = 2435
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 487, n = 2440
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 488, n = 2445
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 489, n = 2450
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 490, n = 2455
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 491, n = 2460
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 492, n = 2465
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 493, n = 2470
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 494, n = 2475
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 495, n = 2480
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 496, n = 2485
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 497, n = 2490
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Iteration 498, n = 2495
+
+Labeled 0 examples using spelling rules
+Induced 0 contextual rules
+
+Labeled 0 examples using contextual rules
+Induced 0 spelling rules
+
+Labeled 6276 examples using combined rules
